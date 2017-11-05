@@ -1,0 +1,525 @@
+{
+  "MediaContainer": {
+    "size": 2,
+    "Video": [
+      {
+        "addedAt": "1487306987",
+        "art": "/library/metadata/48500/art/1487307055",
+        "audienceRating": "9.1",
+        "audienceRatingImage": "rottentomatoes://image.rating.upright",
+        "chapterSource": "media",
+        "contentRating": "PG",
+        "duration": "6432811",
+        "guid": "com.plexapp.agents.imdb://tt3521164?lang=en",
+        "key": "/library/metadata/48500",
+        "lastViewedAt": "1489870190",
+        "librarySectionID": "1",
+        "originallyAvailableAt": "2016-11-23",
+        "primaryExtraKey": "/library/metadata/48501",
+        "rating": "9.5",
+        "ratingImage": "rottentomatoes://image.rating.certified",
+        "ratingKey": "48500",
+        "sessionKey": "2",
+        "studio": "Walt Disney Pictures",
+        "summary": "In Ancient Polynesia, when a terrible curse incurred by Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the demigod to set things right.",
+        "tagline": "The ocean is calling.",
+        "thumb": "/library/metadata/48500/thumb/1487307055",
+        "title": "Moana",
+        "type": "movie",
+        "updatedAt": "1487307055",
+        "viewCount": "3",
+        "viewOffset": "195194",
+        "year": "2016",
+        "Media": [
+          {
+            "aspectRatio": "2.35",
+            "audioChannels": "6",
+            "audioCodec": "dca",
+            "audioProfile": "dts",
+            "bitrate": "7298",
+            "container": "mkv",
+            "duration": "6432811",
+            "height": "808",
+            "id": "132092",
+            "videoCodec": "h264",
+            "videoFrameRate": "24p",
+            "videoProfile": "high",
+            "videoResolution": "1080",
+            "width": "1920",
+            "Part": [
+              {
+                "audioProfile": "dts",
+                "container": "mkv",
+                "deepAnalysisVersion": "2",
+                "duration": "6432811",
+                "file": "/mnt/PLEX-MEDIA/Movies/Moana (2016)/Moana.mkv",
+                "id": "132868",
+                "indexes": "sd",
+                "key": "/library/parts/132868/1487287183/file.mkv",
+                "requiredBandwidths": "20996,16236,11592,9961,9125,8797,8797,8797",
+                "size": "5868254955",
+                "videoProfile": "high",
+                "Stream": [
+                  {
+                    "bitDepth": "8",
+                    "bitrate": "5762",
+                    "chromaSubsampling": "4:2:0",
+                    "codec": "h264",
+                    "default": "1",
+                    "frameRate": "23.976",
+                    "hasScalingMatrix": "0",
+                    "height": "808",
+                    "id": "316141",
+                    "index": "0",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "level": "41",
+                    "profile": "high",
+                    "refFrames": "5",
+                    "requiredBandwidths": "19484,14726,10082,8452,7615,7300,7300,7300",
+                    "scanType": "progressive",
+                    "streamType": "1",
+                    "width": "1920"
+                  },
+                  {
+                    "audioChannelLayout": "5.1(side)",
+                    "bitrate": "1536",
+                    "channels": "6",
+                    "codec": "dca",
+                    "default": "1",
+                    "id": "316142",
+                    "index": "1",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "profile": "dts",
+                    "requiredBandwidths": "1509,1509,1509,1509,1509,1509,1509,1509",
+                    "samplingRate": "48000",
+                    "selected": "1",
+                    "streamType": "2"
+                  },
+                  {
+                    "bitrate": "0",
+                    "codec": "srt",
+                    "id": "316143",
+                    "index": "2",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "requiredBandwidths": "1,1,1,1,1,1,1,1",
+                    "streamType": "3",
+                    "title": "English"
+                  },
+                  {
+                    "bitrate": "0",
+                    "codec": "srt",
+                    "id": "316144",
+                    "index": "3",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "requiredBandwidths": "1,1,1,1,1,1,1,1",
+                    "streamType": "3",
+                    "title": "English SDH"
+                  },
+                  {
+                    "codec": "srt",
+                    "id": "316247",
+                    "key": "/library/streams/316247",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "streamType": "3"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Genre": [
+          {
+            "count": "160",
+            "id": "93",
+            "tag": "Adventure"
+          },
+          {
+            "count": "177",
+            "id": "95",
+            "tag": "Family"
+          },
+          {
+            "count": "196",
+            "id": "168",
+            "tag": "Fantasy"
+          },
+          {
+            "count": "503",
+            "id": "133",
+            "tag": "Comedy"
+          },
+          {
+            "count": "134",
+            "id": "94",
+            "tag": "Animation"
+          },
+          {
+            "count": "40",
+            "id": "472",
+            "tag": "Musical"
+          }
+        ],
+        "Director": [
+          {
+            "count": "6",
+            "id": "457",
+            "tag": "Ron Clements"
+          },
+          {
+            "count": "6",
+            "id": "458",
+            "tag": "John Musker"
+          }
+        ],
+        "Writer": [
+          {
+            "count": "2",
+            "id": "30653",
+            "tag": "Jared Bush"
+          }
+        ],
+        "Producer": [
+          {
+            "count": "2",
+            "id": "6048",
+            "tag": "Osnat Shurer"
+          }
+        ],
+        "Country": [
+          {
+            "count": "697",
+            "id": "50",
+            "tag": "USA"
+          }
+        ],
+        "Role": [
+          {
+            "id": "33056",
+            "role": "Moana (voice)",
+            "tag": "Auli'i Cravalho",
+            "thumb": "http://image.tmdb.org/t/p/original/uSYgcqhxETyMezXLPK9nTRAbdWx.jpg"
+          },
+          {
+            "count": "9",
+            "id": "2983",
+            "role": "Maui (voice)",
+            "tag": "Dwayne Johnson",
+            "thumb": "http://image.tmdb.org/t/p/original/akweMz59qsSoPUJYe7QpjAc2rQp.jpg"
+          },
+          {
+            "count": "2",
+            "id": "31108",
+            "role": "Gramma Tala (voice)",
+            "tag": "Rachel House",
+            "thumb": "http://image.tmdb.org/t/p/original/8UGo2lHG5wtnH55lKPDm8oJ0IOk.jpg"
+          },
+          {
+            "count": "5",
+            "id": "2170",
+            "role": "Chief Tui (voice)",
+            "tag": "Temuera Morrison",
+            "thumb": "http://image.tmdb.org/t/p/original/A1nD5J5uRwJM4hnpXd3DdmwZGjP.jpg"
+          },
+          {
+            "count": "7",
+            "id": "2284",
+            "role": "Tamatoa (voice)",
+            "tag": "Jemaine Clement",
+            "thumb": "http://image.tmdb.org/t/p/original/crxCXudFMxuPqrYqYiTYKbhImhv.jpg"
+          },
+          {
+            "count": "2",
+            "id": "5288",
+            "role": "Sina (voice)",
+            "tag": "Nicole Scherzinger",
+            "thumb": "http://image.tmdb.org/t/p/original/aWO7fZN4W7ua4MVoruG0ZeEXur9.jpg"
+          },
+          {
+            "count": "12",
+            "id": "11",
+            "role": "Heihei / Villager #3 (voice)",
+            "tag": "Alan Tudyk",
+            "thumb": "http://image.tmdb.org/t/p/original/6QuMtbD8kmhpwWhFKfNzEvHRLOu.jpg"
+          },
+          {
+            "count": "2",
+            "id": "11940",
+            "role": "Villager #1 (voice)",
+            "tag": "Troy Polamalu",
+            "thumb": "http://image.tmdb.org/t/p/original/51rD9ZZYyXNmk7xiotiVBqhBHqS.jpg"
+          },
+          {
+            "id": "33057",
+            "role": "Chief Tui (singing voice)",
+            "tag": "Chris Jackson",
+            "thumb": "http://image.tmdb.org/t/p/original/iczG0WVwwifbOTY5JWvBVz9DVaj.jpg"
+          },
+          {
+            "count": "2",
+            "id": "31109",
+            "role": "Fisherman (voice)",
+            "tag": "Oscar Kightley",
+            "thumb": "http://image.tmdb.org/t/p/original/7yaqZT5e1UlxBmqQ3xpXAUP7SNL.jpg"
+          },
+          {
+            "id": "33058",
+            "role": "Toddler Moana (voice)",
+            "tag": "Louise Bush"
+          },
+          {
+            "id": "33059",
+            "role": "Villager #2 (voice)",
+            "tag": "Puanani Cravalho"
+          }
+        ],
+        "User": {
+          "id": "1",
+          "thumb": "https://plex.tv/users/24371234d49ce110/avatar?c=2017-03-25+02%3A28%3A38+UTC",
+          "title": "scytherswings"
+        },
+        "Player": {
+          "address": "172.16.8.100",
+          "device": "PC",
+          "machineIdentifier": "5c6f8f62-b235-43bd-a84b-fcac5a512903",
+          "model": "MacOSX",
+          "platform": "Plex Home Theater",
+          "platformVersion": "",
+          "product": "Plex Home Theater",
+          "profile": "Plex Home Theater",
+          "state": "playing",
+          "title": "fagbookair.scynet.info",
+          "vendor": "",
+          "version": "1.4.1.469-47a90f01"
+        },
+        "Session": {
+          "id": "5c6f8f62-b235-43bd-a84b-fcac5a512903",
+          "bandwidth": 15326,
+          "location": "lan"
+        }
+      },
+      {
+        "addedAt": "1488854095",
+        "art": "/library/metadata/49153/art/1488854138",
+        "audienceRating": "9.5",
+        "audienceRatingImage": "rottentomatoes://image.rating.upright",
+        "chapterSource": "media",
+        "contentRating": "Not Rated",
+        "duration": "3911960",
+        "guid": "com.plexapp.agents.imdb://tt0368667?lang=en",
+        "key": "/library/metadata/49153",
+        "lastViewedAt": "1488858032",
+        "librarySectionID": "1",
+        "originallyAvailableAt": "2003-11-10",
+        "rating": "8.6",
+        "ratingImage": "rottentomatoes://image.rating.ripe",
+        "ratingKey": "49153",
+        "sessionKey": "1",
+        "studio": "Daft Life Ltd. Co.",
+        "summary": "A sci-fi anime House-musical movie collaboration between Daft Punk--and their music--and designer Leiji Matsumoto. During the recording of their DISCOVERY album and using the themes of sci-fi celebrity, decadence and space travel, Daft Punk--with help from Cedric Hervet--wrote the story and inspired seasoned Japanese animators to symbiotically create this stunning space musical.",
+        "tagline": "The animated House musical.",
+        "thumb": "/library/metadata/49153/thumb/1488854138",
+        "title": "Interstella 5555: The 5tory of the 5ecret 5tar 5ystem",
+        "type": "movie",
+        "updatedAt": "1488854138",
+        "viewCount": "1",
+        "viewOffset": "1573",
+        "year": "2003",
+        "Media": [
+          {
+            "aspectRatio": "1.33",
+            "audioChannels": "6",
+            "audioCodec": "ac3",
+            "bitrate": "2744",
+            "container": "mkv",
+            "duration": "3911960",
+            "height": "568",
+            "id": "133997",
+            "videoCodec": "h264",
+            "videoFrameRate": "PAL",
+            "videoProfile": "high",
+            "videoResolution": "480",
+            "width": "700",
+            "Part": [
+              {
+                "container": "mkv",
+                "deepAnalysisVersion": "2",
+                "duration": "3911960",
+                "file": "/mnt/PLEX-MEDIA/Movies/Interstella 5555 The 5tory of the 5ecret 5tar 5ystem (2003)/Interstella 5555 The 5tory of the 5ecret 5tar 5ystem.mkv",
+                "id": "134773",
+                "indexes": "sd",
+                "key": "/library/parts/134773/1488853296/file.mkv",
+                "requiredBandwidths": "4488,3589,2965,2752,2747,2747,2747,2747",
+                "size": "1342042565",
+                "videoProfile": "high",
+                "Stream": [
+                  {
+                    "anamorphic": "1",
+                    "bitDepth": "8",
+                    "bitrate": "2296",
+                    "chromaSubsampling": "4:2:0",
+                    "codec": "h264",
+                    "colorRange": "tv",
+                    "colorSpace": "smpte170m",
+                    "default": "1",
+                    "frameRate": "25.000",
+                    "hasScalingMatrix": "0",
+                    "height": "568",
+                    "id": "320138",
+                    "index": "0",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "level": "40",
+                    "pixelAspectRatio": "227:213",
+                    "profile": "high",
+                    "refFrames": "16",
+                    "requiredBandwidths": "4040,3141,2517,2303,2299,2299,2299,2299",
+                    "scanType": "progressive",
+                    "streamType": "1",
+                    "width": "700"
+                  },
+                  {
+                    "audioChannelLayout": "5.1(side)",
+                    "bitrate": "448",
+                    "channels": "6",
+                    "codec": "ac3",
+                    "default": "1",
+                    "id": "320139",
+                    "index": "1",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "requiredBandwidths": "448,448,448,448,448,448,448,448",
+                    "samplingRate": "48000",
+                    "selected": "1",
+                    "streamType": "2"
+                  },
+                  {
+                    "codec": "srt",
+                    "id": "320140",
+                    "key": "/library/streams/320140",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "streamType": "3"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Genre": [
+          {
+            "count": "51",
+            "id": "27310",
+            "tag": "Sci-Fi"
+          },
+          {
+            "count": "134",
+            "id": "94",
+            "tag": "Animation"
+          },
+          {
+            "count": "26",
+            "id": "248",
+            "tag": "Music"
+          },
+          {
+            "count": "129",
+            "id": "194",
+            "tag": "Action"
+          },
+          {
+            "count": "160",
+            "id": "93",
+            "tag": "Adventure"
+          }
+        ],
+        "Director": [
+          {
+            "id": "33687",
+            "tag": "Kazuhisa Takenôchi"
+          }
+        ],
+        "Writer": [
+          {
+            "id": "33688",
+            "tag": "Thomas Bangalter"
+          },
+          {
+            "id": "33689",
+            "tag": "Guy-Manuel de Homem-Christo"
+          },
+          {
+            "id": "33690",
+            "tag": "Cédric Hervet"
+          }
+        ],
+        "Producer": [
+          {
+            "id": "33692",
+            "tag": "Thomas Bangalter"
+          },
+          {
+            "id": "33693",
+            "tag": "Guy-Manuel de Homem-Christo"
+          }
+        ],
+        "Country": [
+          {
+            "count": "14",
+            "id": "1304",
+            "tag": "Japan"
+          }
+        ],
+        "Role": [
+          {
+            "id": "33691",
+            "role": "Octave",
+            "tag": "Romanthony"
+          }
+        ],
+        "User": {
+          "title": ""
+        },
+        "Player": {
+          "address": "172.16.1.103",
+          "device": "Linux",
+          "machineIdentifier": "ogt3k25ekygka9z11swuvunmi",
+          "model": "",
+          "platform": "Chrome",
+          "platformVersion": "55.0",
+          "product": "Plex Web",
+          "profile": "Web",
+          "state": "paused",
+          "title": "Plex Web (Chrome)",
+          "vendor": "",
+          "version": "2.12.5"
+        },
+        "Session": {
+          "id": "cofeqkm1maq21xw2qiplxflx",
+          "bandwidth": 5628,
+          "location": "lan"
+        },
+        "TranscodeSession": {
+          "key": "gu6zwwoqbtgvkdtawtledbo6",
+          "throttled": true,
+          "complete": false,
+          "progress": 15.100000381469727,
+          "speed": 0,
+          "duration": 3911960,
+          "context": "streaming",
+          "videoDecision": "copy",
+          "audioDecision": "transcode",
+          "protocol": "http",
+          "container": "mkv",
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "audioChannels": 6
+        }
+      }
+    ]
+  }
+}
