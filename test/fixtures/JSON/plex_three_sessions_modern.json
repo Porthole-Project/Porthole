@@ -1,0 +1,783 @@
+{
+  "MediaContainer": {
+    "size": 3,
+    "Metadata": [
+      {
+        "addedAt": "1361385472",
+        "art": "/library/metadata/113/art/1538188726",
+        "chapterSource": "media",
+        "contentRating": "PG",
+        "duration": "4406068",
+        "guid": "com.plexapp.agents.imdb://tt0465925?lang=en",
+        "key": "/library/metadata/113",
+        "librarySectionID": "1",
+        "librarySectionKey": "/library/sections/1",
+        "librarySectionTitle": "Movies",
+        "originallyAvailableAt": "2006-08-17",
+        "rating": "6.5",
+        "ratingKey": "113",
+        "sessionKey": "516",
+        "studio": "DisneyToon Studios",
+        "summary": "Kenai finds his childhood human friend Nita and the two embark on a journey to burn the amulet he gave to her before he was a bear, much to Koda's dismay.",
+        "thumb": "/library/metadata/113/thumb/1538188726",
+        "title": "Brother Bear 2",
+        "type": "movie",
+        "updatedAt": "1538188726",
+        "viewOffset": "179000",
+        "year": "2006",
+        "Media": [
+          {
+            "audioProfile": "dts",
+            "id": "113",
+            "videoProfile": "high",
+            "audioChannels": "2",
+            "audioCodec": "aac",
+            "bitrate": "3795",
+            "container": "mpegts",
+            "duration": "4406068",
+            "height": "720",
+            "protocol": "hls",
+            "videoCodec": "h264",
+            "videoFrameRate": "24p",
+            "videoResolution": "720p",
+            "width": "1280",
+            "selected": true,
+            "Part": [
+              {
+                "audioProfile": "dts",
+                "id": "113",
+                "videoProfile": "high",
+                "bitrate": "3795",
+                "container": "mpegts",
+                "duration": "4406068",
+                "height": "720",
+                "protocol": "hls",
+                "width": "1280",
+                "decision": "transcode",
+                "selected": true,
+                "Stream": [
+                  {
+                    "bitrate": "3676",
+                    "chromaLocation": "left",
+                    "codec": "h264",
+                    "default": "1",
+                    "displayTitle": "720p (H.264)",
+                    "frameRate": "23.975999999999999",
+                    "height": "720",
+                    "id": "24052",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "streamType": "1",
+                    "width": "1280",
+                    "decision": "transcode",
+                    "location": "segments-av"
+                  },
+                  {
+                    "bitrate": "119",
+                    "bitrateMode": "cbr",
+                    "channels": "2",
+                    "codec": "aac",
+                    "default": "1",
+                    "displayTitle": "English (DTS 5.1)",
+                    "id": "24053",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "selected": "1",
+                    "streamType": "2",
+                    "decision": "transcode",
+                    "location": "segments-av"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Genre": [
+          {
+            "count": "388",
+            "filter": "genre=77",
+            "id": "77",
+            "tag": "Adventure"
+          },
+          {
+            "count": "154",
+            "filter": "genre=403",
+            "id": "403",
+            "tag": "Animation"
+          },
+          {
+            "count": "201",
+            "filter": "genre=241",
+            "id": "241",
+            "tag": "Family"
+          }
+        ],
+        "Director": [
+          {
+            "filter": "director=6306",
+            "id": "6306",
+            "tag": "Ben Gluck"
+          }
+        ],
+        "Writer": [
+          {
+            "filter": "writer=6307",
+            "id": "6307",
+            "tag": "Rich Burns"
+          }
+        ],
+        "Producer": [
+          {
+            "filter": "producer=6315",
+            "id": "6315",
+            "tag": "Carolyn Bates"
+          },
+          {
+            "filter": "producer=6316",
+            "id": "6316",
+            "tag": "Jim Ballantine"
+          }
+        ],
+        "Country": [
+          {
+            "count": "725",
+            "filter": "country=139",
+            "id": "139",
+            "tag": "USA"
+          }
+        ],
+        "Role": [
+          {
+            "filter": "actor=6311",
+            "id": "6311",
+            "role": "Kenai (voice)",
+            "tag": "Patrick Dempsey",
+            "thumb": "http://image.tmdb.org/t/p/original/eHNUaEyNBVuCSxJjPQIgH0keYru.jpg"
+          },
+          {
+            "count": "3",
+            "filter": "actor=3440",
+            "id": "3440",
+            "role": "Nita (voice)",
+            "tag": "Mandy Moore",
+            "thumb": "http://image.tmdb.org/t/p/original/cLnf9oc3Z2HRZmxex78mffUfs9s.jpg"
+          },
+          {
+            "count": "4",
+            "filter": "actor=6294",
+            "id": "6294",
+            "role": "Koda (voice)",
+            "tag": "Jeremy Suarez",
+            "thumb": "http://image.tmdb.org/t/p/original/ktydBVBvNUlmfJj56aYwJ0O31JN.jpg"
+          },
+          {
+            "count": "5",
+            "filter": "actor=6299",
+            "id": "6299",
+            "role": "Rutt (voice)",
+            "tag": "Rick Moranis",
+            "thumb": "http://image.tmdb.org/t/p/original/rVZbTJjM4g0Um6trlLHRiBzBO7t.jpg"
+          },
+          {
+            "count": "2",
+            "filter": "actor=6289",
+            "id": "6289",
+            "role": "Tuke (voice)",
+            "tag": "Dave Thomas",
+            "thumb": "http://image.tmdb.org/t/p/original/qWQ330du0Uu1Q8wAq9hMoYmOJ5Q.jpg"
+          },
+          {
+            "count": "6",
+            "filter": "actor=2769",
+            "id": "2769",
+            "role": "Anda (voice)",
+            "tag": "Andrea Martin",
+            "thumb": "http://image.tmdb.org/t/p/original/syS5bfwIeFAFzAWtn0dqPbfPadM.jpg"
+          },
+          {
+            "count": "5",
+            "filter": "actor=422",
+            "id": "422",
+            "role": "Kata (voice)",
+            "tag": "Catherine O'Hara",
+            "thumb": "http://image.tmdb.org/t/p/original/nDlIwrkmvz11mwsKSTAbM2dfDgC.jpg"
+          },
+          {
+            "count": "5",
+            "filter": "actor=6313",
+            "id": "6313",
+            "role": "Innoko (voice)",
+            "tag": "Wanda Sykes",
+            "thumb": "http://image.tmdb.org/t/p/original/pQ2Dw07FNLCurDxkkMrelqQhm0B.jpg"
+          },
+          {
+            "count": "4",
+            "filter": "actor=6314",
+            "id": "6314",
+            "role": "Aunt Siqiniq (voice)",
+            "tag": "Wendie Malick",
+            "thumb": "https://thetvdb.com/banners/actors/449246.jpg"
+          },
+          {
+            "count": "4",
+            "filter": "actor=289",
+            "id": "289",
+            "role": "Aunt Taqqiq (voice)",
+            "tag": "Kathy Najimy",
+            "thumb": "http://image.tmdb.org/t/p/original/eFFh5QU9ErNKls7WfyG8VHEc2MY.jpg"
+          },
+          {
+            "count": "9",
+            "filter": "actor=6297",
+            "id": "6297",
+            "role": "Tug (voice)",
+            "tag": "Michael Clarke Duncan",
+            "thumb": "http://image.tmdb.org/t/p/original/A0fXStrmFubDRFS8UeRW7xvcf6S.jpg"
+          },
+          {
+            "count": "17",
+            "filter": "actor=2092",
+            "id": "2092",
+            "role": "Bering / Chilkoot (voice)",
+            "tag": "Jim Cummings",
+            "thumb": "http://image.tmdb.org/t/p/original/i9frXvIJsGtoFikBEFVqE7uN8Bq.jpg"
+          },
+          {
+            "count": "3",
+            "filter": "actor=6309",
+            "id": "6309",
+            "role": "Atka",
+            "tag": "Jeff Bennett",
+            "thumb": "http://image.tmdb.org/t/p/original/bms3A7TA0QItjtUlB28qv4MFFAH.jpg"
+          },
+          {
+            "filter": "actor=6310",
+            "id": "6310",
+            "role": "Young Nita",
+            "tag": "Jessie Flower",
+            "thumb": "http://image.tmdb.org/t/p/original/xXd9MvK89QoUAhNDEKUVuwCQ1WR.jpg"
+          },
+          {
+            "filter": "actor=6308",
+            "id": "6308",
+            "role": "Young Kenai",
+            "tag": "Jack Weber",
+            "thumb": "http://image.tmdb.org/t/p/original/ihB0zJhasgt0ffa8SZQuPd5afqS.jpg"
+          },
+          {
+            "count": "4",
+            "filter": "actor=6312",
+            "id": "6312",
+            "role": "Hoonah",
+            "tag": "Tress MacNeille",
+            "thumb": "http://image.tmdb.org/t/p/original/4abcX0gAhxoHluUI2nPLsEvsnKa.jpg"
+          }
+        ],
+        "Similar": [
+          {
+            "count": "4",
+            "filter": "similar=2785",
+            "id": "2785",
+            "tag": "Brother Bear"
+          },
+          {
+            "count": "3",
+            "filter": "similar=6324",
+            "id": "6324",
+            "tag": "Tarzan II"
+          },
+          {
+            "count": "4",
+            "filter": "similar=2101",
+            "id": "2101",
+            "tag": "Mulan II"
+          },
+          {
+            "count": "5",
+            "filter": "similar=2106",
+            "id": "2106",
+            "tag": "Return to Never Land"
+          },
+          {
+            "count": "5",
+            "filter": "similar=2100",
+            "id": "2100",
+            "tag": "Lady and the Tramp II: Scamp's Adventure"
+          },
+          {
+            "filter": "similar=6321",
+            "id": "6321",
+            "tag": "Lilo \u0026 Stitch 2: Stitch has a Glitch"
+          },
+          {
+            "count": "2",
+            "filter": "similar=6325",
+            "id": "6325",
+            "tag": "The Fox and the Hound 2"
+          },
+          {
+            "count": "3",
+            "filter": "similar=6304",
+            "id": "6304",
+            "tag": "Home on the Range"
+          },
+          {
+            "count": "4",
+            "filter": "similar=5259",
+            "id": "5259",
+            "tag": "The Jungle Book 2"
+          },
+          {
+            "count": "3",
+            "filter": "similar=6317",
+            "id": "6317",
+            "tag": "101 Dalmatians II: Patch's London Adventure"
+          },
+          {
+            "count": "3",
+            "filter": "similar=6318",
+            "id": "6318",
+            "tag": "Bambi II"
+          },
+          {
+            "count": "6",
+            "filter": "similar=2110",
+            "id": "2110",
+            "tag": "The Lion King 1½"
+          },
+          {
+            "filter": "similar=6320",
+            "id": "6320",
+            "tag": "Kronk's New Groove"
+          },
+          {
+            "count": "10",
+            "filter": "similar=784",
+            "id": "784",
+            "tag": "Chicken Little"
+          },
+          {
+            "count": "3",
+            "filter": "similar=6326",
+            "id": "6326",
+            "tag": "The Hunchback of Notre Dame II"
+          },
+          {
+            "count": "6",
+            "filter": "similar=2112",
+            "id": "2112",
+            "tag": "The Little Mermaid II: Return to the Sea"
+          },
+          {
+            "count": "4",
+            "filter": "similar=6323",
+            "id": "6323",
+            "tag": "Open Season"
+          },
+          {
+            "filter": "similar=6322",
+            "id": "6322",
+            "tag": "Mickey, Donald, Goofy: The Three Musketeers"
+          },
+          {
+            "count": "3",
+            "filter": "similar=6319",
+            "id": "6319",
+            "tag": "Cinderella II: Dreams Come True"
+          },
+          {
+            "count": "7",
+            "filter": "similar=2111",
+            "id": "2111",
+            "tag": "The Lion King 2: Simba's Pride"
+          }
+        ],
+        "User": {
+          "id": "20480458",
+          "thumb": "https://plex.tv/users/7d32089924e1e0d5/avatar?c=1538874856",
+          "title": "bnewell350@gmail.com"
+        },
+        "Player": {
+          "address": "68.57.192.148",
+          "device": "Roku 3",
+          "machineIdentifier": "0fd6e3c1056e1cecd82ab391f2dd189b",
+          "model": "4200X",
+          "platform": "Roku",
+          "platformVersion": "9.x",
+          "product": "Plex for Roku",
+          "profile": "Roku-7.x",
+          "remotePublicAddress": "68.57.192.148",
+          "state": "paused",
+          "title": "Roku Player",
+          "vendor": "Roku",
+          "version": "6.1.1.5282-4907f3688-Plex",
+          "local": false,
+          "userID": 20480458
+        },
+        "Session": {
+          "id": "0fd6e3c1056e1cecd82ab391f2dd189b",
+          "bandwidth": 3985,
+          "location": "wan"
+        },
+        "TranscodeSession": {
+          "key": "/transcode/sessions/2f5c536a-3b70-4f00-9e1c-2dfbc44b85d7_1",
+          "throttled": true,
+          "complete": false,
+          "progress": "30.5",
+          "speed": "0",
+          "duration": 4406068,
+          "remaining": 36467,
+          "context": "streaming",
+          "sourceVideoCodec": "h264",
+          "sourceAudioCodec": "dca",
+          "videoDecision": "transcode",
+          "audioDecision": "transcode",
+          "protocol": "hls",
+          "container": "mpegts",
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "audioChannels": 2,
+          "transcodeHwRequested": false,
+          "timeStamp": "1545445274.5508702",
+          "maxOffsetAvailable": "1341.0076779999999",
+          "minOffsetAvailable": "1"
+        }
+      },
+      {
+        "addedAt": "1435243522",
+        "art": "/library/metadata/7018/art/1538193235",
+        "contentRating": "TV-PG",
+        "duration": "1433686",
+        "grandparentArt": "/library/metadata/7018/art/1538193235",
+        "grandparentKey": "/library/metadata/7018",
+        "grandparentRatingKey": "7018",
+        "grandparentTheme": "/library/metadata/7018/theme/1538193235",
+        "grandparentThumb": "/library/metadata/7018/thumb/1538193235",
+        "grandparentTitle": "Seinfeld",
+        "guid": "com.plexapp.agents.thetvdb://79169/6/24?lang=en",
+        "index": "24",
+        "key": "/library/metadata/7134",
+        "librarySectionID": "2",
+        "librarySectionKey": "/library/sections/2",
+        "librarySectionTitle": "TV Shows",
+        "originallyAvailableAt": "1995-05-18",
+        "parentIndex": "6",
+        "parentKey": "/library/metadata/7110",
+        "parentRatingKey": "7110",
+        "parentThumb": "/library/metadata/7110/thumb/1538193229",
+        "parentTitle": "Season 6",
+        "rating": "7.8",
+        "ratingKey": "7134",
+        "sessionKey": "527",
+        "summary": "George and Jerry are suspected by the cast and Kramer of deliberately injuring Bette Midler during a softball game, giving Jerry's girlfriend, Bette's understudy, a chance to perform. Kramer becomes Bette's personal assistant. Elaine gets George's father to translate for her when she suspects that her manicurist has made some obvious snide remarks in a foreign tongue. While crying about losing her manicurists, Elaine meets the owner of a catalog, J. Peterman, and gets herself a new job.",
+        "thumb": "/library/metadata/7134/thumb/1538194481",
+        "title": "The Understudy",
+        "titleSort": "Understudy",
+        "type": "episode",
+        "updatedAt": "1538194481",
+        "viewOffset": "1433000",
+        "year": "1995",
+        "Media": [
+          {
+            "aspectRatio": "1.78",
+            "audioChannels": "2",
+            "audioCodec": "aac",
+            "audioProfile": "he-aac",
+            "bitrate": "3191",
+            "container": "mkv",
+            "duration": "1433686",
+            "height": "720",
+            "id": "16156",
+            "videoCodec": "h264",
+            "videoFrameRate": "24p",
+            "videoProfile": "high",
+            "videoResolution": "720",
+            "width": "1280",
+            "selected": true,
+            "Part": [
+              {
+                "audioProfile": "he-aac",
+                "container": "mkv",
+                "duration": "1433686",
+                "file": "/mnt/PLEX_MEDIA3/TV_SHOWS/Seinfeld/Season 06/Seinfeld - S06E24 - The Understudy.mkv",
+                "id": "16161",
+                "key": "/library/parts/16161/1435243522/file.mkv",
+                "size": "571948487",
+                "videoProfile": "high",
+                "decision": "directplay",
+                "selected": true,
+                "Stream": [
+                  {
+                    "bitDepth": "8",
+                    "bitrate": "3191",
+                    "chromaLocation": "left",
+                    "chromaSubsampling": "4:2:0",
+                    "codec": "h264",
+                    "default": "1",
+                    "displayTitle": "720p (H.264)",
+                    "frameRate": "23.976",
+                    "hasScalingMatrix": "0",
+                    "height": "720",
+                    "id": "36294",
+                    "index": "0",
+                    "level": "31",
+                    "profile": "high",
+                    "refFrames": "5",
+                    "scanType": "progressive",
+                    "streamType": "1",
+                    "width": "1280",
+                    "location": "direct"
+                  },
+                  {
+                    "channels": "2",
+                    "codec": "aac",
+                    "default": "1",
+                    "displayTitle": "English (HE-AAC Stereo)",
+                    "id": "36295",
+                    "index": "1",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "profile": "he-aac",
+                    "samplingRate": "24000",
+                    "selected": "1",
+                    "streamType": "2",
+                    "location": "direct"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Director": [
+          {
+            "filter": "director=33153",
+            "id": "33153",
+            "tag": "Andy Ackerman"
+          }
+        ],
+        "Writer": [
+          {
+            "filter": "writer=33199",
+            "id": "33199",
+            "tag": "Marjorie Gross"
+          },
+          {
+            "filter": "writer=33141",
+            "id": "33141",
+            "tag": "Carol Leifer"
+          }
+        ],
+        "User": {
+          "id": "2745725",
+          "thumb": "https://plex.tv/users/e14da01d01947307/avatar?c=1545419093",
+          "title": "mdmstatu"
+        },
+        "Player": {
+          "address": "107.13.131.18",
+          "device": "Linux",
+          "machineIdentifier": "gty7y10dtnpl909mmfuq5hsy",
+          "model": "",
+          "platform": "Chromecast",
+          "platformVersion": "66.0",
+          "product": "Plex Cast",
+          "profile": "Chromecast",
+          "remotePublicAddress": "107.13.131.18",
+          "state": "paused",
+          "title": "Chromecast",
+          "vendor": "",
+          "version": "3.81.0",
+          "local": false,
+          "userID": 2745725
+        },
+        "Session": {
+          "id": "cikr4djyodb0qpnqir2wgrar",
+          "bandwidth": 3775,
+          "location": "wan"
+        }
+      },
+      {
+        "addedAt": "1477163344",
+        "art": "/library/metadata/6820/art/1538193069",
+        "contentRating": "TV-MA",
+        "duration": "1276860",
+        "grandparentArt": "/library/metadata/6820/art/1538193069",
+        "grandparentKey": "/library/metadata/6820",
+        "grandparentRatingKey": "6820",
+        "grandparentTheme": "/library/metadata/6820/theme/1538193069",
+        "grandparentThumb": "/library/metadata/6820/thumb/1538193069",
+        "grandparentTitle": "It's Always Sunny in Philadelphia",
+        "guid": "com.plexapp.agents.thetvdb://75805/4/2?lang=en",
+        "index": "2",
+        "key": "/library/metadata/6930",
+        "lastViewedAt": "1544830257",
+        "librarySectionID": "2",
+        "librarySectionKey": "/library/sections/2",
+        "librarySectionTitle": "TV Shows",
+        "originallyAvailableAt": "2008-09-18",
+        "parentIndex": "4",
+        "parentKey": "/library/metadata/6928",
+        "parentRatingKey": "6928",
+        "parentThumb": "/library/metadata/6928/thumb/1538193062",
+        "parentTitle": "Season 4",
+        "rating": "8.3",
+        "ratingKey": "6930",
+        "sessionKey": "528",
+        "summary": "Charlie, Mac, and Dennis formulate a plan to take advantage of the rising gas prices. By purchasing excess amounts now, they can sell it in the future and profit. As usual, things don't go as planned. Dee is also out to make money when she learns that Bruce is going to give the family fortune to a Muslim cultural center. She and Frank try to stop him and get the cash for themselves. ",
+        "thumb": "/library/metadata/6930/thumb/1538194332",
+        "title": "The Gang Solves the Gas Crisis",
+        "titleSort": "Gang Solves the Gas Crisis",
+        "type": "episode",
+        "updatedAt": "1538194332",
+        "viewCount": "1",
+        "viewOffset": "340000",
+        "year": "2008",
+        "Media": [
+          {
+            "audioProfile": "lc",
+            "id": "15971",
+            "videoProfile": "constrained baseline",
+            "audioChannels": "2",
+            "audioCodec": "aac",
+            "bitrate": "1783",
+            "container": "mp4",
+            "duration": "1276860",
+            "height": "480",
+            "optimizedForStreaming": "1",
+            "protocol": "dash",
+            "videoCodec": "h264",
+            "videoFrameRate": "24p",
+            "videoResolution": "480p",
+            "width": "640",
+            "selected": true,
+            "Part": [
+              {
+                "audioProfile": "lc",
+                "id": "15976",
+                "videoProfile": "constrained baseline",
+                "bitrate": "1783",
+                "container": "mp4",
+                "duration": "1276860",
+                "height": "480",
+                "optimizedForStreaming": "1",
+                "protocol": "dash",
+                "width": "640",
+                "decision": "transcode",
+                "selected": true,
+                "Stream": [
+                  {
+                    "bitrate": "1672",
+                    "chromaLocation": "topleft",
+                    "codec": "h264",
+                    "colorPrimaries": "smpte170m",
+                    "colorTrc": "bt709",
+                    "default": "1",
+                    "displayTitle": "480p (H.264 Constrained Baseline)",
+                    "frameRate": "23.975999999999999",
+                    "height": "480",
+                    "id": "35807",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "streamType": "1",
+                    "width": "640",
+                    "decision": "copy",
+                    "location": "segments-video"
+                  },
+                  {
+                    "bitrate": "111",
+                    "bitrateMode": "cbr",
+                    "channels": "2",
+                    "codec": "aac",
+                    "default": "1",
+                    "displayTitle": "English (AAC Stereo)",
+                    "id": "35806",
+                    "language": "English",
+                    "languageCode": "eng",
+                    "selected": "1",
+                    "streamType": "2",
+                    "decision": "copy",
+                    "location": "segments-audio"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Director": [
+          {
+            "filter": "director=32034",
+            "id": "32034",
+            "tag": "Matt Shakman"
+          }
+        ],
+        "Writer": [
+          {
+            "filter": "writer=32493",
+            "id": "32493",
+            "tag": "Charlie Day"
+          },
+          {
+            "filter": "writer=32657",
+            "id": "32657",
+            "tag": "Sonny Lee"
+          },
+          {
+            "filter": "writer=32656",
+            "id": "32656",
+            "tag": "Patrick Walsh"
+          }
+        ],
+        "User": {
+          "id": "6105352",
+          "thumb": "https://plex.tv/users/5876d5a68a34b520/avatar?c=1545453108",
+          "title": "mkchase"
+        },
+        "Player": {
+          "address": "47.227.190.246",
+          "device": "OSX",
+          "machineIdentifier": "y3x8t7rgojaozzrajbjtt21i",
+          "model": "",
+          "platform": "Chrome",
+          "platformVersion": "70.0",
+          "product": "Plex Web",
+          "profile": "Web",
+          "remotePublicAddress": "47.227.190.246",
+          "state": "playing",
+          "title": "Chrome",
+          "vendor": "",
+          "version": "3.81.1",
+          "local": false,
+          "userID": 6105352
+        },
+        "Session": {
+          "id": "tfrq1ev116gy939i87mxtdyy",
+          "bandwidth": 1789,
+          "location": "wan"
+        },
+        "TranscodeSession": {
+          "key": "/transcode/sessions/z5ge5vb57ls35u7gsgburasx",
+          "throttled": true,
+          "complete": false,
+          "progress": "38.200000762939453",
+          "speed": "0",
+          "duration": 1276860,
+          "remaining": 4561,
+          "context": "streaming",
+          "sourceVideoCodec": "h264",
+          "sourceAudioCodec": "aac",
+          "videoDecision": "copy",
+          "audioDecision": "copy",
+          "protocol": "dash",
+          "container": "mp4",
+          "videoCodec": "h264",
+          "audioCodec": "aac",
+          "audioChannels": 2,
+          "transcodeHwRequested": false,
+          "transcodeHwFullPipeline": false,
+          "timeStamp": "1545454507.3735895",
+          "maxOffsetAvailable": "487.78149659863942",
+          "minOffsetAvailable": "1"
+        }
+      }
+    ]
+  }
+}

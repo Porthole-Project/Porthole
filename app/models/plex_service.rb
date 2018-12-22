@@ -76,8 +76,8 @@ class PlexService < ActiveRecord::Base
       return nil
     end
 
-    defaults = {'Accept': 'application/json', 'Connection': 'Keep-Alive',
-                'X-Plex-Token': token}
+    defaults = { 'Accept': 'application/json', 'Connection': 'Keep-Alive',
+                 'X-Plex-Token': token }
 
     headers.merge!(defaults)
 
@@ -101,7 +101,7 @@ class PlexService < ActiveRecord::Base
     end
     logger.info("Getting PlexSessions for PlexService: #{service.name}")
     sess = plex_api(method: :get, path: '/status/sessions')
-
+    logger.debug(sess.to_json)
     if sess.nil? #does plex have any sessions?
       logger.debug("Plex doesn't have any sessions")
       return nil
@@ -111,7 +111,7 @@ class PlexService < ActiveRecord::Base
     incoming_plex_sessions = sess['MediaContainer']
 
     #if plex has nothing, then fucking nuke that shit
-    if incoming_plex_sessions.blank? || incoming_plex_sessions['size'] < 1 || incoming_plex_sessions['Video'].blank?
+    if incoming_plex_sessions.blank? || incoming_plex_sessions['size'] < 1 || incoming_plex_sessions['Metadata'].blank?
       if plex_sessions.count > 0
         logger.info('incoming_plex_sessions was empty... Deleting all sessions.')
         plex_sessions.destroy_all #TODO: This needs a test
@@ -119,7 +119,7 @@ class PlexService < ActiveRecord::Base
       return nil
     end
 
-    incoming_plex_sessions = incoming_plex_sessions['Video']
+    incoming_plex_sessions = incoming_plex_sessions['Metadata']
 
     # References for the code below:
     # http://stackoverflow.com/questions/10230227/find-values-in-common-between-two-arrays
@@ -127,8 +127,8 @@ class PlexService < ActiveRecord::Base
     # http://stackoverflow.com/questions/24295763/find-intersection-of-arrays-of-hashes-by-hash-value
     # http://stackoverflow.com/questions/8639857/rails-3-how-to-get-the-difference-between-two-arrays
 
-    stale_sessions = plex_sessions.map {|known_session| known_session.session_key} -
-        incoming_plex_sessions.map {|new_session| new_session["sessionKey"]}
+    stale_sessions = plex_sessions.map { |known_session| known_session.session_key } -
+        incoming_plex_sessions.map { |new_session| new_session["sessionKey"] }
 
     logger.debug("stale_sessions #{stale_sessions}")
 
@@ -136,8 +136,8 @@ class PlexService < ActiveRecord::Base
       PlexSession.find_by(session_key: stale_session).try(:destroy)
     end
 
-    sessions_to_update = incoming_plex_sessions.map {|new_session| new_session["sessionKey"]} &
-        plex_sessions.map {|known_session| known_session.session_key}
+    sessions_to_update = incoming_plex_sessions.map { |new_session| new_session["sessionKey"] } &
+        plex_sessions.map { |known_session| known_session.session_key }
     logger.debug("sessions_to_update #{sessions_to_update}")
 
     new_view_offsets = Hash.new
@@ -153,15 +153,15 @@ class PlexService < ActiveRecord::Base
                           new_view_offsets[known_session_key])
     end
 
-    new_sessions = incoming_plex_sessions.map {|new_session| new_session["sessionKey"]} -
-        plex_sessions.map {|known_session| known_session.session_key}
+    new_sessions = incoming_plex_sessions.map { |new_session| new_session["sessionKey"] } -
+        plex_sessions.map { |known_session| known_session.session_key }
 
     logger.debug("new_sessions #{new_sessions}")
-    sessions_to_add = incoming_plex_sessions.select {|matched| new_sessions.include?(matched["sessionKey"])}
+    sessions_to_add = incoming_plex_sessions.select { |matched| new_sessions.include?(matched["sessionKey"]) }
 
     logger.debug("sessions_to_add #{sessions_to_add}")
     PlexSession.transaction do
-      sessions_to_add.each {|new_session| add_plex_session(new_session)}
+      sessions_to_add.each { |new_session| add_plex_session(new_session) }
     end
   end
 
@@ -184,13 +184,13 @@ class PlexService < ActiveRecord::Base
                           progress: new_session["viewOffset"],
                           session_key: new_session["sessionKey"],
                           stream_type: PlexSession.determine_stream_type(new_session.dig('TranscodeSession', 'videoDecision')),
-                          plex_object_attributes: {description: new_session["summary"],
-                                                   media_title: new_session["title"],
-                                                   thumb_url: temp_thumb})
+                          plex_object_attributes: { description: new_session["summary"],
+                                                    media_title: new_session["title"],
+                                                    thumb_url: temp_thumb })
   end
 
   def update_plex_session(existing_session, updated_session_viewOffset)
-    logger.debug {"Updating PlexSession ID: #{existing_session.id} for PlexService: #{service.name}"}
+    logger.debug { "Updating PlexSession ID: #{existing_session.id} for PlexService: #{service.name}" }
     existing_session.update!(progress: updated_session_viewOffset)
   end
 
@@ -201,8 +201,8 @@ class PlexService < ActiveRecord::Base
 
     path = '/library/recentlyAdded'
 
-    defaults = {'Accept': 'application/json', 'Connection': 'Keep-Alive',
-                'X-Plex-Token': token}
+    defaults = { 'Accept': 'application/json', 'Connection': 'Keep-Alive',
+                 'X-Plex-Token': token }
 
     unless service.online_status
       logger.warn("Service: #{service.name} is offline, can't grab plex data.")
@@ -225,8 +225,8 @@ class PlexService < ActiveRecord::Base
       logger.debug('It looks like there are no recentlyAdded objects. Stale entries will be removed.')
     end
 
-    stale_pras = plex_recently_addeds.map {|known_pra| known_pra.uuid} -
-        incoming_pras.map {|new_pra| new_pra['ratingKey']}
+    stale_pras = plex_recently_addeds.map { |known_pra| known_pra.uuid } -
+        incoming_pras.map { |new_pra| new_pra['ratingKey'] }
 
     # logger.debug("stale_pras #{stale_pras}")
 
@@ -234,15 +234,15 @@ class PlexService < ActiveRecord::Base
       PlexRecentlyAdded.find_by(uuid: stale_pra).destroy
     end
 
-    new_pras = incoming_pras.map {|new_pra| new_pra['ratingKey']} -
-        plex_recently_addeds.map {|known_pra| known_pra.uuid}
+    new_pras = incoming_pras.map { |new_pra| new_pra['ratingKey'] } -
+        plex_recently_addeds.map { |known_pra| known_pra.uuid }
 
     # logger.debug("new_pras #{new_pras}")
-    pras_to_add = incoming_pras.select {|matched| new_pras.include?(matched['ratingKey'])}
+    pras_to_add = incoming_pras.select { |matched| new_pras.include?(matched['ratingKey']) }
 
     # logger.debug("pras_to_add #{pras_to_add}")
     PlexRecentlyAdded.transaction do
-      pras_to_add.each {|new_pra| add_plex_recently_added(new_pra)}
+      pras_to_add.each { |new_pra| add_plex_recently_added(new_pra) }
     end
   end
 
@@ -255,9 +255,9 @@ class PlexService < ActiveRecord::Base
     time = Time.at(new_pra['addedAt']).to_datetime
     plex_recently_addeds.create!(uuid: new_pra['ratingKey'],
                                  added_date: time,
-                                 plex_object_attributes: {description: summary,
-                                                          media_title: media_title,
-                                                          thumb_url: temp_thumb})
+                                 plex_object_attributes: { description: summary,
+                                                           media_title: media_title,
+                                                           thumb_url: temp_thumb })
   end
 
   private
