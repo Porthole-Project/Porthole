@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'home/show'
   resources :services
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root 'home#show'
 end
