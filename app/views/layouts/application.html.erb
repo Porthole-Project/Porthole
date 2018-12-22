@@ -1,34 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-<%= render 'layouts/header' %>
+<html>
+  <head>
+    <title>Porthole2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-<body>
-  
-<%= render 'layouts/navbar' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-
-<div id="wrap">
-  <div id="main" class="container clear-top">
-    <div class="row">
-      
-      <%= flash_messages %>
-        
-      <title><%= full_title(yield(:title)) %></title>
-      <div class="container">
-        <div class="row">
-          <%= yield %>
-        </div>
-      </div>
-      
-      <%= render 'layouts/footer' %>
-
-
-    </div>
-  </div>
-</div>
-
-</body>
+  <body>
+    <%= yield %>
+  </body>
 </html>
-
-

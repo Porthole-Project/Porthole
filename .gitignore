@@ -7,27 +7,28 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore editor stuff
+.idea
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
-/coverage
-# Ignore all logfiles, tempfiles and secrets.yml
+
+# Ignore all logfiles and tempfiles.
 /log/*
+/tmp/*
 !/log/.keep
-/tmp
-/config/secrets.yml
-server_config.yml
+!/tmp/.keep
 
-#Ignore public/images
-/public/images/*
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+/node_modules
+/yarn-error.log
+
 /public/assets
-#Ignore Spring files.
-/spring/*.pid
-/.idea/
+.byebug_history
 
-#Ignore test images
-/test/test_images/*.jpeg
-/test/test_images/*.png
-
-#Ignore service_test_config.yml to keep private safe
-/test/integration_test_config_files/service_test_config.yml
+# Ignore master key for decrypting credentials and more.
+/config/master.key

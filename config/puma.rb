@@ -1,52 +1,34 @@
-#!/usr/bin/env puma
+# Puma can serve each request in a thread from an internal thread pool.
+# The `threads` method setting takes two numbers: a minimum and maximum.
+# Any libraries that use thread pools should be configured to match
+# the maximum value specified for Puma. Default is set to 5 threads for minimum
+# and maximum; this matches the default thread size of Active Record.
+#
+threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
+threads threads_count, threads_count
 
-require 'yaml'
-threads 0, 32
+# Specifies the `port` that Puma will listen on to receive requests; default is 3000.
+#
+port        ENV.fetch("PORT") { 3000 }
 
-if ENV['DOCKER']
-  puts 'Detected DOCKER environment.'
-  daemonize false
-  bind 'tcp://0.0.0.0:3000'
-elsif Gem.win_platform?
-  puts "Looks like we're running on Windows. Not Daemonizing."
-  daemonize false
-  puts 'Redirecting log output! If you run into any issues, check the error logs in: log/production.stderr.log, log/production.stdout.log, and log/production.log'
-  stdout_redirect 'log/production.stdout.log', 'log/production.stderr.log', true
+# Specifies the `environment` that Puma will run in.
+#
+environment ENV.fetch("RAILS_ENV") { "development" }
 
-  web_host = YAML.load_file('server_config.yml')['web_host']
-  port = YAML.load_file('server_config.yml')['port']
+# Specifies the number of `workers` to boot in clustered mode.
+# Workers are forked webserver processes. If using threads and workers together
+# the concurrency of the application would be max `threads` * `workers`.
+# Workers do not work on JRuby or Windows (both of which do not support
+# processes).
+#
+# workers ENV.fetch("WEB_CONCURRENCY") { 2 }
 
-  web_host_binding = "tcp://#{web_host}:#{port}"
-  puts "Binding puma to: #{web_host_binding}"
-  bind web_host_binding
-else
-  if YAML.load_file('server_config.yml')['use_reverse_proxy']
-    puts 'Binding to unix socket because use_reverse_proxy was set to "true"'
-    bind "unix://#{Dir.pwd}/tmp/sockets/puma.sock"
-    pidfile "#{Dir.pwd}/tmp/pids/puma.pid"
-    state_path "#{Dir.pwd}/tmp/pids/puma.state"
-    activate_control_app
-  else
-    web_host = YAML.load_file('server_config.yml')['web_host']
-    port = YAML.load_file('server_config.yml')['port']
-
-    web_host_binding = "tcp://#{web_host}:#{port}"
-    puts "Binding puma to: #{web_host_binding}"
-    bind web_host_binding
-  end
-
-  if ENV['NO_DAEMONIZE'] || ENV['RAILS_ENV'] == 'development' || ENV['RAILS_ENV'] == 'test'
-    puts 'Detected NO_DAEMONIZE. Not daemonizing.'
-    daemonize false
-  else
-    puts 'Redirecting log output! If you run into any issues, check the error logs in: log/production.stderr.log, log/production.stdout.log, and log/production.log'
-    puts 'If you need to stop the service run ./stopServer.sh'
-    stdout_redirect 'log/production.stdout.log', 'log/production.stderr.log', true
-    pidfile "#{Dir.pwd}/tmp/pids/puma.pid"
-    state_path "#{Dir.pwd}/tmp/pids/puma.state"
-    daemonize true
-  end
-end
+# Use the `preload_app!` method when specifying a `workers` number.
+# This directive tells Puma to first boot the application and load code
+# before forking the application. This takes advantage of Copy On Write
+# process behavior so workers use less memory.
+#
+# preload_app!
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
