@@ -23,5 +23,7 @@ module Porthole
     end
 
     config.active_record.schema_format = :sql
+
+    config.autoload_paths += Dir.glob("#{config.root}/app/interactions/*")
   end
 end
