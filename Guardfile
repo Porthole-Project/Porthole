@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 guard :rubocop, cli: %w[-D -S -a] do
   watch(/.rubocop.yml/)
   watch(/.+\.rb$/)

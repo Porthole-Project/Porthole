@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @service.name %>
+</p>
+
+<p>
+  <strong>Dns name:</strong>
+  <%= @service.dns_name %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @service.ip %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @service.url %>
+</p>
+
+<p>
+  <strong>Port:</strong>
+  <%= @service.port %>
+</p>
+
+<p>
+  <strong>Serviceable:</strong>
+  <%= @service.serviceable_id %>
+</p>
+
+<p>
+  <strong>Serviceable type:</strong>
+  <%= @service.serviceable_type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @service.description %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>
