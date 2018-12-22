@@ -1,4 +1,16 @@
 <body>
-  <%= render 'navbar' %>
-  <%= yield %>
+  <%= render 'layouts/navbar' %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <% render 'layouts/notice' %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <br />
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
