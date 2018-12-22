@@ -21,5 +21,7 @@ module Porthole2
       generator.assets false
       generator.helper false
     end
+
+    config.active_record.schema_format = :sql
   end
 end

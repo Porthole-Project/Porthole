@@ -19,7 +19,18 @@ class ServicesControllerTest < ActionDispatch::IntegrationTest
 
   test 'should create service' do
     assert_difference('Service.count') do
-      post services_url, params: { service: { description: @service.description, dns_name: @service.dns_name, ip: @service.ip, name: @service.name, port: @service.port, serviceable_id: @service.serviceable_id, serviceable_type: @service.serviceable_type, url: @service.url } }
+      post services_url, params: {
+        service: {
+          description: @service.description,
+          dns_name: @service.dns_name,
+          ip: @service.ip,
+          name: @service.name,
+          port: @service.port,
+          serviceable_id: @service.serviceable_id,
+          serviceable_type: @service.serviceable_type,
+          url: @service.url
+        }
+      }
     end
 
     assert_redirected_to service_url(Service.last)
@@ -36,7 +47,18 @@ class ServicesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should update service' do
-    patch service_url(@service), params: { service: { description: @service.description, dns_name: @service.dns_name, ip: @service.ip, name: @service.name, port: @service.port, serviceable_id: @service.serviceable_id, serviceable_type: @service.serviceable_type, url: @service.url } }
+    patch service_url(@service), params: {
+      service: {
+        description: @service.description,
+        dns_name: @service.dns_name,
+        ip: @service.ip,
+        name: @service.name,
+        port: @service.port,
+        serviceable_id: @service.serviceable_id,
+        serviceable_type: @service.serviceable_type,
+        url: @service.url
+      }
+    }
     assert_redirected_to service_url(@service)
   end
 

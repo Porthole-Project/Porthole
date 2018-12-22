@@ -1,2 +1,28 @@
 Metrics/LineLength:
   Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - lib/tasks/auto_annotate_models.rake
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*
+
+Style/MixinUsage:
+  Exclude:
+    - bin/*
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - test/test_helper.rb
+
+Rails:
+  Enabled: true

@@ -3,6 +3,7 @@
 guard :rubocop, cli: %w[-D -S -a] do
   watch(/.rubocop.yml/)
   watch(/.+\.rb$/)
+  watch(/.+\.jbuilder$/)
   watch(/Rakefile/)
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }
 end
