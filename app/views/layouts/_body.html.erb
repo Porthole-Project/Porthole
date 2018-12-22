@@ -1,16 +1,11 @@
 <body>
-  <%= render 'layouts/navbar' %>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <% render 'layouts/notice' %>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <br />
-        <%= yield %>
-      </div>
+<%= render 'layouts/navbar' %>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-xs-12">
+      <% render 'layouts/notice' %>
     </div>
   </div>
+  <%= yield %>
+</div>
 </body>

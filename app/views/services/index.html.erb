@@ -1,37 +1,44 @@
-<h1>Services</h1>
+<div class="row justify-content-center">
+  <div class="col-xs-12">
+    <br />
 
-<table class="table">
-  <thead>
-  <tr>
-    <th>Name</th>
-    <th>Dns name</th>
-    <th>IP</th>
-    <th>Url</th>
-    <th>Port</th>
-    <th>Service Type</th>
-    <th>Description</th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
+    <h1>Services</h1>
 
-  <tbody>
-  <% @services.each do |service| %>
-    <tr>
-      <td><%= service.name %></td>
-      <td><%= service.dns_name %></td>
-      <td><%= service.ip %></td>
-      <td><%= service.url %></td>
-      <td><%= service.port %></td>
-      <td><%= service.serviceable_type %></td>
-      <td><%= service.description %></td>
-      <td><%= link_to 'Show', service, class: 'btn btn-info' %></td>
-      <td><%= link_to 'Edit', edit_service_path(service), class: 'btn btn-info' %></td>
-      <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Dns name</th>
+        <th>IP</th>
+        <th>Url</th>
+        <th>Port</th>
+        <th>Service Type</th>
+        <th>Description</th>
+        <th colspan="3"></th>
+      </tr>
+      </thead>
 
-<br>
+      <tbody>
+      <% @services.each do |service| %>
+        <tr>
+          <td><%= service.name %></td>
+          <td><%= service.dns_name %></td>
+          <td><%= service.ip %></td>
+          <td><%= service.url %></td>
+          <td><%= service.port %></td>
+          <td><%= service.serviceable_type %></td>
+          <td><%= service.description %></td>
+          <td><%= link_to 'Show', service, class: 'btn btn-info' %></td>
+          <td><%= link_to 'Edit', edit_service_path(service), class: 'btn btn-info' %></td>
+          <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
 
-<%= link_to 'New Service', new_service_path, class: 'btn btn-success' %>
+    <br>
+
+    <%= link_to 'New Service', new_service_path, class: 'btn btn-success' %>
+
+  </div>
+</div>
