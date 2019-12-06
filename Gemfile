@@ -47,7 +47,7 @@ group :test do
 end
 
 group :production do
-  gem 'puma', '~> 3.10'
+  gem 'puma', '~> 3.12'
 end
 
 gem 'tzinfo-data'
