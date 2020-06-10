@@ -81,7 +81,7 @@ GEM
       faraday
       hashie
       multi_json
-    geocoder (1.4.4)
+    geocoder (1.6.1)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     hashdiff (0.3.6)
@@ -239,7 +239,7 @@ DEPENDENCIES
   fabrication (~> 2.16.1)
   faker (~> 1.8.4)
   forecast_io (~> 2.0)
-  geocoder (~> 1.4.3)
+  geocoder (~> 1.6.1)
   jbuilder (~> 2.6.3)
   jquery-rails (~> 4.3.1)
   json (~> 2.1.0)
